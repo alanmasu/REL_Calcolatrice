@@ -1,4 +1,5 @@
 # Variabili
+# MAKEFLAGS += --silent --no-print-directory
 VENV = $(shell pwd)/.venv
 # Aggiungiamo il venv al PATH: così ogni comando troverà il python e cocotb-config corretti
 export PATH := $(VENV)/bin:$(PATH)
@@ -14,9 +15,10 @@ venv: $(VENV)/bin/activate
 
 # Lancia i test
 test: venv
-	$(MAKE) -C tests
+	python3 $(PWD)/tests/runner.py
 
 # Pulisce i file di simulazione
 clean:
+	@echo "Cleaning up..."
 	$(MAKE) -C tests clean
 	rm -rf tests/__pycache__
