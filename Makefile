@@ -1,18 +1,20 @@
 # Variabili
-VENV = .venv
-PYTHON = $(VENV)/bin/python3
-PIP = $(VENV)/bin/pip
+VENV = $(shell pwd)/.venv
+# Aggiungiamo il venv al PATH: così ogni comando troverà il python e cocotb-config corretti
+export PATH := $(VENV)/bin:$(PATH)
 
 .PHONY: venv test clean
 
 # Crea l'ambiente virtuale e installa le dipendenze
-venv:
+$(VENV)/bin/activate:
 	python3 -m venv $(VENV)
-	$(PIP) install cocotb cocotb-bus pytest
+	$(VENV)/bin/pip install cocotb cocotb-bus pytest
 
-# Lancia i test entrando nella cartella tests
+venv: $(VENV)/bin/activate
+
+# Lancia i test
 test: venv
-	source $(VENV)/bin/activate && $(MAKE) -C tests
+	$(MAKE) -C tests
 
 # Pulisce i file di simulazione
 clean:
