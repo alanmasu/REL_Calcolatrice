@@ -45,3 +45,5 @@ async def test_alu_operations(dut):
     await Timer(1, unit="ns")
     assert dut.q.value == 5, f"Errore DIV: atteso 5, ottenuto {dut.q.value}"
     
+    for i in range(4):
+        await Timer(1, unit="ns")

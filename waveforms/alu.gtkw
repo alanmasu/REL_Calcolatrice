@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Tue Jan  6 22:01:11 2026
+[*]
+[dumpfile] "/home/alan.masutti/Documents/calcolatrice/waveforms/alu.ghw"
+[dumpfile_mtime] "Tue Jan  6 22:00:50 2026"
+[dumpfile_size] 1231
+[savefile] "/home/alan.masutti/Documents/calcolatrice/waveforms/alu.gtkw"
+[timestart] 0
+[size] 1278 879
+[pos] -1 -1
+*-20.601419 2577000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.alu.
+[sst_width] 276
+[signals_width] 94
+[sst_expanded] 1
+[sst_vpaned_height] 254
+@421
+#{top.alu.d1[31:0]} top.alu.d1[31] top.alu.d1[30] top.alu.d1[29] top.alu.d1[28] top.alu.d1[27] top.alu.d1[26] top.alu.d1[25] top.alu.d1[24] top.alu.d1[23] top.alu.d1[22] top.alu.d1[21] top.alu.d1[20] top.alu.d1[19] top.alu.d1[18] top.alu.d1[17] top.alu.d1[16] top.alu.d1[15] top.alu.d1[14] top.alu.d1[13] top.alu.d1[12] top.alu.d1[11] top.alu.d1[10] top.alu.d1[9] top.alu.d1[8] top.alu.d1[7] top.alu.d1[6] top.alu.d1[5] top.alu.d1[4] top.alu.d1[3] top.alu.d1[2] top.alu.d1[1] top.alu.d1[0]
+#{top.alu.d2[31:0]} top.alu.d2[31] top.alu.d2[30] top.alu.d2[29] top.alu.d2[28] top.alu.d2[27] top.alu.d2[26] top.alu.d2[25] top.alu.d2[24] top.alu.d2[23] top.alu.d2[22] top.alu.d2[21] top.alu.d2[20] top.alu.d2[19] top.alu.d2[18] top.alu.d2[17] top.alu.d2[16] top.alu.d2[15] top.alu.d2[14] top.alu.d2[13] top.alu.d2[12] top.alu.d2[11] top.alu.d2[10] top.alu.d2[9] top.alu.d2[8] top.alu.d2[7] top.alu.d2[6] top.alu.d2[5] top.alu.d2[4] top.alu.d2[3] top.alu.d2[2] top.alu.d2[1] top.alu.d2[0]
+@28
+top.alu.divide
+top.alu.multiply
+top.alu.subtract
+top.alu.add
+@421
+#{top.alu.q[31:0]} top.alu.q[31] top.alu.q[30] top.alu.q[29] top.alu.q[28] top.alu.q[27] top.alu.q[26] top.alu.q[25] top.alu.q[24] top.alu.q[23] top.alu.q[22] top.alu.q[21] top.alu.q[20] top.alu.q[19] top.alu.q[18] top.alu.q[17] top.alu.q[16] top.alu.q[15] top.alu.q[14] top.alu.q[13] top.alu.q[12] top.alu.q[11] top.alu.q[10] top.alu.q[9] top.alu.q[8] top.alu.q[7] top.alu.q[6] top.alu.q[5] top.alu.q[4] top.alu.q[3] top.alu.q[2] top.alu.q[1] top.alu.q[0]
+[pattern_trace] 1
+[pattern_trace] 0
