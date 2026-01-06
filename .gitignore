@@ -1,6 +1,7 @@
 # .gitignore
 __pycache__/
 *.vcd
+*.ghw
 *.xml
 sim_build/
 results.xml

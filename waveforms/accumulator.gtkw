@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.118 (w)1999-2023 BSI
+[*] Tue Jan  6 21:33:47 2026
+[*]
+[dumpfile] "/home/alan.masutti/Documents/calcolatrice/waveforms/accumulator.ghw"
+[dumpfile_mtime] "Tue Jan  6 20:25:35 2026"
+[dumpfile_size] 860
+[savefile] "/home/alan.masutti/Documents/calcolatrice/waveforms/accumulator.gtkw"
+[timestart] 0
+[size] 1278 879
+[pos] -1 -1
+*-23.989998 47230000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.accumulator.
+[sst_width] 276
+[signals_width] 183
+[sst_expanded] 1
+[sst_vpaned_height] 254
+@28
+top.accumulator.clock
+[color] 1
+top.accumulator.reset
+top.accumulator.acc_en
+top.accumulator.acc_init
+@420
+#{top.accumulator.d[31:0]} top.accumulator.d[31] top.accumulator.d[30] top.accumulator.d[29] top.accumulator.d[28] top.accumulator.d[27] top.accumulator.d[26] top.accumulator.d[25] top.accumulator.d[24] top.accumulator.d[23] top.accumulator.d[22] top.accumulator.d[21] top.accumulator.d[20] top.accumulator.d[19] top.accumulator.d[18] top.accumulator.d[17] top.accumulator.d[16] top.accumulator.d[15] top.accumulator.d[14] top.accumulator.d[13] top.accumulator.d[12] top.accumulator.d[11] top.accumulator.d[10] top.accumulator.d[9] top.accumulator.d[8] top.accumulator.d[7] top.accumulator.d[6] top.accumulator.d[5] top.accumulator.d[4] top.accumulator.d[3] top.accumulator.d[2] top.accumulator.d[1] top.accumulator.d[0]
+#{top.accumulator.q[31:0]} top.accumulator.q[31] top.accumulator.q[30] top.accumulator.q[29] top.accumulator.q[28] top.accumulator.q[27] top.accumulator.q[26] top.accumulator.q[25] top.accumulator.q[24] top.accumulator.q[23] top.accumulator.q[22] top.accumulator.q[21] top.accumulator.q[20] top.accumulator.q[19] top.accumulator.q[18] top.accumulator.q[17] top.accumulator.q[16] top.accumulator.q[15] top.accumulator.q[14] top.accumulator.q[13] top.accumulator.q[12] top.accumulator.q[11] top.accumulator.q[10] top.accumulator.q[9] top.accumulator.q[8] top.accumulator.q[7] top.accumulator.q[6] top.accumulator.q[5] top.accumulator.q[4] top.accumulator.q[3] top.accumulator.q[2] top.accumulator.q[1] top.accumulator.q[0]
+[pattern_trace] 1
+[pattern_trace] 0

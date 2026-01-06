@@ -49,6 +49,10 @@ async def test_acc_basic(dut):
     assert dut.q.value == 0xAA, f"Errore: Caricamento fallito, ottenuto {dut.q.value}"
     
     # Reset finale asincrono
+    await Timer(1, unit="ns")
     dut.reset.value = 0
     await NextTimeStep()
     assert dut.q.value == 0, f"Errore: Reset asincrono non ha azzerato l'uscita, ottenuto {dut.q.value}"
+    
+    for i in range(2):
+        await RisingEdge(dut.clock)
