@@ -14,11 +14,16 @@ $(VENV)/bin/activate:
 venv: $(VENV)/bin/activate
 
 # Lancia i test
+# test: venv
+# 	pytest tests/runner.py
+# 	mkdir -p waveforms
+# 	cp sim_build/*.ghw waveforms/
+# 	make clean
 test: venv
-	python3 $(PWD)/tests/runner.py
-	mkdir -p waveforms
-	cp sim_build/*.ghw waveforms/
-	make clean
+	@pytest tests/runner.py
+	@mkdir -p waveforms
+	@cp sim_build/*.ghw waveforms/
+	@$(MAKE) --no-print-directory clean
 
 show_%: waveforms/%.ghw waveforms/%.gtkw
 	gtkwave waveforms/$*.gtkw &
@@ -26,8 +31,8 @@ show_%: waveforms/%.ghw waveforms/%.gtkw
 # Pulisce i file di buld
 clean:
 	@echo "Cleaning up..."
-	rm -rf tests/__pycache__
-	rm -rf sim_build
+	@rm -rf tests/__pycache__
+	@rm -rf sim_build
 
 # Pulisce i
 clean_sim: 
