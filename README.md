@@ -41,10 +41,10 @@ To run this project locally, you will need:
 * **Make**
 
 ### Local Execution
-1.  **Install ghdl & GTKWave (optional)**
+1.  **Install ghdl & GTKWave**
 
     * [Here](http://ghdl.free.fr/site/pmwiki.php?n=Main.Installation) information on how to get GHDL.
-    * [Here](https://gtkwave.sourceforge.net/) information on how to get GTKWave.
+    * [Here](https://gtkwave.sourceforge.net/) information on how to get GTKWave. (optional)
   
 2.  **Clone the repo:**
     ```bash
