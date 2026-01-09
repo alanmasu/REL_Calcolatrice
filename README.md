@@ -51,7 +51,7 @@ To run this project locally, you will need:
     git clone https://github.com/alanmasu/REL-Calcolatrice.git
     cd REL-Calcolatrice
     ```
-3.  **Run the test:**
+3.  **Run the regression test:**
     ```bash
     make test
     ```
@@ -59,6 +59,15 @@ To run this project locally, you will need:
     If you want to inspect the waveforms, you can open the generated waveform file with GTKWave:
     ```bash
     make show_<module_name>
+    ```
+5. **Clean Up:**
+    To clean up the build artifacts, run:
+    ```bash
+    make clean
+    ```
+    for removing also the waveform files, run:
+    ```bash
+    make clean_sim
     ```
 
 ---
@@ -69,6 +78,14 @@ To run this project locally, you will need:
 * `tests/` : Contains the `.py` (cocotb) testbench files.
 * `waveforms/`: Contains waveform configurations for GTKWave and after-simulation waveform dumps.
 * `Makefile` : The build script that configures the simulator and starts cocotb.
+
+### 🛠️ Adding modules
+To add a new module to the project:
+1. Place your VHDL source files in the `src/` directory as `<module_name>.vhd` files.
+2. Create a corresponding Python testbench in the `tests/` directory, following the naming convention `test_<module_name>.py`.
+3. Update the `tests/runner.py` file to include your new module in the `@pytest.mark.parametrize` decorator.
+4. Run `make test_<module_name>` to build and test your new module.
+5. Run `make show_<module_name>` to view the waveform if needed. (Optional)
 
 ---
 
