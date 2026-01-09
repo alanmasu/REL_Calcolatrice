@@ -1,1 +1,1 @@
-../../src/alu.vhd
+../src/alu.vhd
