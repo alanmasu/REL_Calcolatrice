@@ -23,6 +23,10 @@ test: venv
 show_%: waveforms/%.ghw waveforms/%.gtkw
 	gtkwave waveforms/$*.gtkw &
 
+test_uvm:
+	@(cd run/alu && vivado -mode batch -source run.tcl)
+	@cat run/alu/xsim.log
+
 # Pulisce i file di buld
 clean:
 	@echo "Cleaning up..."
@@ -34,3 +38,10 @@ clean_sim:
 	mkdir -p sim_build
 	mv waveforms/*.ghw sim_build/
 	make clean
+
+clean_uvm:
+	@echo "Cleaning up UVM build files..."
+	rm -rf run/alu/*.log
+	rm -rf run/alu/*.jou
+	rm -rf run/alu/*.pb
+	rm -rf run/alu/xsim.dir
